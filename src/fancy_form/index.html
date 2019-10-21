@@ -7,23 +7,21 @@
   <!-- You may add more stuff here -->
   <script src="script.js"></script>
   <link href="style.css" rel="stylesheet" />
+
+<head>
+<title> Sign Up Form </title>
 </head>
-
 <body>
+<div id="login-box">
+<div class="left-box">
+<h1> Sign Up </h1>
 
-  <!-- You may wrap the form in your own elements if necessary. -->
-  <form onsubmit="return !1">
-    <label for="input-address">Bitcoin Address</label>
-    <input id="input-address" placeholder="16q4PinynazaMYfv24juNLkbjkDQxJo2dc" />
-
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" placeholder="0.0000" />
-
-    <label for="input-otp">OTP Authentication</label>
-    <input type="number" id="input-otp" placeholder="SMS OTP" />
-
-    <button>SEND BTC</button>
-  </form>
+<input type="text" name="username" placeholder="Username"required/>
+<input type="text" name="email" placeholder="Email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"required/>
+<input type="password" name="password" placeholder="Password(min 8 character)" minlength="8" required/>
+<input type="password" name="password2" placeholder="Retype Password" minlength="8" required/>
+<input type="submit" name="signup-button" value="Sign Up"/>
+</div>
+</div>
 </body>
-
 </html>
